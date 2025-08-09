@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Відьмак 3: Дикий Гін</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #700;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #e33;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e33;
+      padding-bottom: 10px;
+      color: #e33;
+    }
+
+    .character {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 4px solid #e33;
+    }
+
+    .character-text {
+      width: 60%;
+    }
+
+    .character-image {
+      width: 35%;
+    }
+
+    .character-image img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #e33;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #e33;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c00;
+    }
+
+    a.email-link {
+      color: #eee;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Відьмак 3: Дикий Гін</h1>
+    <nav>
+      <a href="#characters">Персонажі</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section id="characters">
+    <h2>Головні персонажі</h2>
+
+    <div class="character">
+      <div class="character-text">
+        <h3>Геральт з Рівії</h3>
+        <p>Відьмак, мисливець на монстрів. Відомий своїм холодним розумом, бойовими навичками та почуттям справедливості. Протягом гри шукає свою прийомну доньку Цірі.</p>
+      </div>
+      <div class="character-image">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Geralt_of_Rivia.png" alt="Геральт з Рівії">
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="character-text">
+        <h3>Цірілла (Цірі)</h3>
+        <p>Прийомна донька Геральта, нащадок Старшої Крові, має надзвичайні магічні здібності та вміння переміщуватись між світами. Її шукає Дикий Гін.</p>
+      </div>
+      <div class="character-image">
+        <img src="" alt="Цірі">
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="character-text">
+        <h3>Йеннефер з Венгербергу</h3>
+        <p>Могутня чародійка, союзниця та кохана Геральта. Відома своєю рішучістю, владною натурою та прихильністю до Цірі.</p>
+      </div>
+      <div class="character-image">
+        <img src="" alt="Йеннефер">
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Контакти</h2>
+    <p>Зв’яжіться з нами для додаткової інформації про гру.</p>
+    <p>Email: <a href="mailto:witcher3@cdprojekt.com" class="email-link">witcher3@cdprojekt.com</a></p>
+    <button onclick="contactMessage()">Надіслати повідомлення</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Відьмак 3. Усі права захищено.</p>
+  </footer>
+
+  <script>
+    function contactMessage() {
+      alert("Дякуємо за звернення до команди Witcher 3!");
+    }
+  </script>
+
+</body>
+</html>
